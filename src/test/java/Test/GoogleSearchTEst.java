@@ -47,11 +47,11 @@ public class GoogleSearchTEst {
 			System.out.println(sel.getFirstSelectedOption().getText());
 			//System.out.println(Assert.assertTrue(driver.findElement(By.id("checkBoxOption1")).isSelected()));
 			//WebElement selectStaticDD= driver.findElement(By.
-			
+
 
 			//_______________________________________________________________________________another dropdown test 
-			
-			
+
+
 			System.out.println("_______________________Another Test________________");
 
 			WebElement webel= driver.findElement(By.id("divpaxinfo"));
@@ -68,79 +68,46 @@ public class GoogleSearchTEst {
 			driver.findElement(By.id("btnclosepaxoption")).click();
 
 			System.out.println(webel.getText());
-			
+
 			//___________________________________________Dynamic Dropdown
-			
+
 			System.out.println("_________________________________________Dynamic dropdown");
-			
-			
+
+
 			driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).click();
 			Thread.sleep(2000);
-			
+
 			WebElement wel= driver.findElement(By.xpath("//a[@value='PNY']"));
 			wel.click();
-			
+
 			System.out.println("The text is ::"+ driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).getAttribute("selectedtext"));
-			
+
 			//__________________________________________AUtoSuggested dropdown
-			
+
 			System.out.println("__________________________________________AutoSuggested DD");
-			
-			
+
+
 			WebElement db= driver.findElement(By.id("autosuggest"));
 			db.clear();
 			db.sendKeys("Ind");
 			Thread.sleep(3000);
-			
+
 			List<WebElement> options= driver.findElements(By.cssSelector("li.ui-menu-item a"));
-			
+
 			for(WebElement w: options )
 			{
 				System.out.println(w.getText());
 				if(w.getText().equalsIgnoreCase("India"))
 				{
 					w.click();
-					
+
 					break;
-					
+
 				}
 			}
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+
+
+			System.out.println("I'm in develop branch");
 
 		} finally {
 			// Clean up
