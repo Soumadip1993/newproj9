@@ -48,6 +48,8 @@ public class Assignment2 {
 		
 		output=output.substring(1);
 		System.out.println(output);
+		
+		System.out.println("This is a new change and I'm happy about it");
 	
 	}
 	}
