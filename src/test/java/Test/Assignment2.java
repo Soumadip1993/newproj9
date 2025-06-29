@@ -50,6 +50,7 @@ public class Assignment2 {
 		System.out.println(output);
 		
 		System.out.println("This is a new change and I'm happy about it");
+		System.out.println("hi ");
 	
 	}
 	}
